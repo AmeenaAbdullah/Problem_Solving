@@ -38,7 +38,7 @@ public class Solution {
             else if(s[i]=='D')
                 a+=500;
             else if(s[i]=='M')
-                a+=1000;
+           
           }
         }
        
