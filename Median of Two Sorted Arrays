@@ -1,0 +1,27 @@
+public class Solution {
+    public double FindMedianSortedArrays(int[] nums1, int[] nums2) {
+        
+        int[] mergeArr= nums1.Concat(nums2).ToArray();
+        Array.Sort(mergeArr);
+        double a=0;
+        double index=Convert.ToDouble(mergeArr.Length)/2;     //1.fff
+        
+        int m=(int)index;
+        
+        if(m==index)   /// median is at not mid index
+        {
+           
+           a=Convert.ToDouble(mergeArr[m-1])+Convert.ToDouble(mergeArr[m]);
+           a=a/2; 
+          
+        }
+        else
+        {
+           a=mergeArr[m];
+         }   
+        return a;
+            
+        
+        
+    }
+}
